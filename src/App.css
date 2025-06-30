@@ -1,0 +1,90 @@
+.box{
+  border:1px solid black;
+  width: 500px;
+  height: 500px;
+  border: 5px solid gray;
+  text-align: center;
+}
+
+img{
+  position: relative;
+  width:50px;
+  height:50px;
+  top:10px;
+}
+
+button[title="scissors-box"] {
+  background-image: url('./img/scissors.png');
+  width:50px;
+  height:50px;
+}
+
+button[title="rock-box"] {
+  background-image: url('./img/rock.png');
+  width:54px;
+  height:54px;
+}
+
+button[title="paper-box"] {
+  background-image: url('./img/paper.png');
+  width:50px;
+  height:50px;
+}
+
+button[title$="-box"] {
+  background-size: cover;
+  background-position: center;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.item-img{
+  width:250px;
+  height:250px;
+}
+
+.subject{
+  text-align: center;
+  font: 35px bold;
+  color: lightgray;
+  margin-top: 20px;
+}
+#rock{
+  color:gray;
+}
+
+#scissors{
+  color:red;
+}
+
+#paper{
+  color:green;
+}
+
+.main{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  color:gray;
+  font-size: 20px;
+}
+
+.win{
+  border: 5px solid green;
+  color : green;
+  font-size : 20px;
+}
+
+.tie{
+  border: 5px solid gray;
+  color : gray;
+  font-size : 20px;
+}
+
+.lose{
+  border: 5px solid red;
+  color : red;
+  font-size : 20px;
+}
